@@ -1,0 +1,226 @@
+<!DOCTYPE html>                         <!--Specify that this is an html doc-->
+<html lang="en">                        <!--define the main html tag-->
+
+<head>                                  <!--open head tag-->
+    <meta charset="UTF-8">
+    <title>HTML basics</title>          <!--Set title-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+</head>                                 <!--Close head tag-->
+
+<body>                                  <!--open body tag-->
+    <h1>HTML basics!</h1>
+    <img class="pic" src="images/html5_icon.png" width="310" height="145">
+
+    <p class="paragraph_1">
+        This is a simple webpage that was written in html and styled with css!<br>
+        html stands for Hyper text markup language. <br><br><br><br><br><br>
+    </p>
+
+    <hr>
+
+    <h2>Tools and Implementation of HTML</h2>
+
+    <p class="paragraph_2">
+        An HTML document is simply a regular text file that has been written in a way that your browser can interpret it and display it's elements.<br>
+        As a result, any basic text editor may be used to create HTML files, such as notepad (which is included with Microsoft Windows),<br>
+		or nano (a simple command-line editor included with most linux distros.). <br>
+        Try to stay away from more sophisticated editors such as Microsoft Word, or Pages, as these editors may add additional formatting to the text; Which is not useful in this application.<br>
+        Typically HTML documents describe the structure of a webpage, while css documents handle the styling of the page, and Javascript documents handle the scripting of the page.<br>
+        We will only be looking at HTML in this tutorial; However, you may find more info on css <a href="http://www.w3schools.com/css/">here</a>, as well as more info on Javascript <a href="http://www.w3schools.com/js/"> here</a>.<br>
+        Tags start with ' &lt ' followed by the name of the tag, then ' &gt ' and are closed with ' &lt/ ' followed by the name of the tag then ' &gt '.<br>
+        The content of the tag goes between the opening and closing tags. ex. ' &ltp&gtThis is my Paragraph!&lt/p&gt '.<br>
+        It is important to close tags when you are done with them, otherwise any new tags you open will be an element of the previous tag.<br>
+        Some special tags do not need to be closed as they serve special functions. An example of this is the &ltbr&gt tag; Which we will learn more about later.<br>
+        Tags do not need to be given individual names in HTML as the tag simply tells the browser to create an element of a specific type; Meaning that you can use the same tag over and over without issue!<br>
+        Tags result in the creation of an element, and elements are considered the building blocks of HTML pages.<br>
+        In html, comments are started with the tag '&lt!--' and closed with the tag '--&gt' (without quotes'').<br>
+        Comments are ignored by the web browser just lke in Python, C or Java, so they are purely for documentation and the readability of your code.<br>
+
+    </p>
+
+    <h2>Getting started.</h2>
+
+    <p class="paragraph_3">
+        It is useful to set up a directory in an easily accessible place on your computer(such as the desktop), to store your HTML document, and all its supporting files in.<br>
+        To get started with html you will need to create an HTML file.  To do that, simply open your desired text editor, and select ' File -&gt Save-as ', then navigate to the<br>
+        directory that you just created.  You may name your file whatever you like, but be sure that your file ends in ' .html '.<br>
+        Next we will need to start editing the file.  Our first few lines of code will give the browser some information on what type of code it is reading
+        and how to handle it, as well as the desired language, and encoding.<br>
+        At the beginning of each html file, you must write the following code(sample code will be shown in red and example elements will be shown in green.):
+    </p>
+
+    <p class="code">
+        &lt!DOCTYPE html&gt<br>
+        &lthtml lang="en"&gt<br>
+        &lthead&gt<br>
+        &nbsp; &nbsp;    &ltmeta charset="UTF-8"&gt<br>
+        &nbsp; &nbsp;    &lttitle&gtTitle&lt/title&gt<br>
+        &lt/head&gt<br>
+        &ltbody&gt<br><br>
+
+        &lt/body&gt<br>
+        &lt/html&gt<br>
+    </p>
+
+    <h2>Adding elements to your web-page.</h2>
+
+    <p class="paragraph_4">
+        To add new elements, simply start adding tags to the ' &ltbody&gt ' element that we created in the last step.<br>
+        New elements should typically be added to ' &ltbody&gt ' because elements in ' &lthead&gt ' are mostly meta-data(data that refers to other data).<br>
+        Below we will go over some basic tags and how to add them to your web-page.
+    </p>
+
+    <h3>Headings</h3>
+
+    <p>
+        Headings may be added to your web-page by using the ' &lth1&gt ' tag.  Remember to close your tag with ' &lt/h1&gt ' when you are done.<br>
+        Heading tags range from ' &lth1&gt ' to ' &lth6&gt ' with the ' &lth1&gt ' tag being the largest.<br><br>
+        Below is an example of the HTML code required to make a heading element:<br><br>
+        *Note the entire HTML document is shown here, but from now it will be assumed that you are adding elements to ' &ltbody&gt '
+    </p>
+
+    <p class="code">
+        &lt!DOCTYPE html&gt<br>
+        &lthtml lang="en"&gt<br>
+        &lthead&gt<br>
+        &nbsp; &nbsp;    &ltmeta charset="UTF-8"&gt<br>
+        &nbsp; &nbsp;    &lttitle&gtTitle&lt/title&gt<br>
+        &lt/head&gt<br>
+        &ltbody&gt<br>
+        <br>
+        &nbsp; &nbsp;   &lth1&gtHello World!&lth1&gt<br>
+        <br>
+        &lt/body&gt<br>
+        &lt/html&gt<br>
+    </p>
+
+    <p>
+        If done properly Your heading element should look like this:
+    </p>
+
+    <h1 class="example">Hello World</h1>
+
+    <h3>Paragraphs</h3>
+
+    <p>
+        To start a paragraph use the &ltp&gt tag.  Be sure to place it between the opening and closing body tags!<br>
+        Once in a paragraph, you may use &ltbr&gt to break to a new line.  This is one of the special tags that we talked about earlier, so this tag does not need to be closed.<br>
+        Once finished with your paragraph you must use the &lt/p&gt tag to close it.  When creating multiple pragraphs, a blank space is automatically inserted between them,<br>
+        so there is no need to add a &ltbr&gt to the end of your paragraphs.<br>
+        Here is an example of a paragraph element:
+    </p>
+
+    <p class="code">
+        &ltp&gtPut your text here,&ltbr&gtand dont forget to break down to new lines!&lt/p&gt
+
+    </p>
+
+    <p class="paragraph_5">
+        If done properly the paragraph element should end up looking like this:
+    </p>
+
+    <p class="example">
+        Put your text here,<br>
+        and dont forget to break down to new lines!
+    </p>
+
+    <h3>Links</h3>
+
+    <p class="paragraph_5">
+        You can also create <a href="http://www.w3schools.com/html/html_intro.asp">links</a> to other sites by using the tag '&lta href="http://www.path.to.site.com"&gt' and ending the tag with '&lt/a&gt' (without quotes'')<br>
+        The text that is located between the start and end of the tag is the text that will be highlighted.  Links are generally created within paragaph elements.<br>
+        For Example if you wanted to link to 'http://google.ca' your HTML code should look like this:
+    </p>
+
+    <p class="code">
+        &ltp&gt<br>
+        Click &lta href="http://www.google.ca"&gtHERE&lt/a&gt to go to google<br>
+        &lt/p&gt
+    </p>
+
+    <p class="paragraph_6">
+        If done properly your element will look like this:
+    </p>
+
+    <p class="example">
+        Click <a href="http://www.google.ca">HERE</a> to go to google
+    </p>
+
+    <h3>Images</h3>
+
+    <p class="paragraph_7">
+        You can also add images to your site with the ' &ltimg src="path/to/image" width="desired w" height="desired h"&gt ' tag.<br>
+        We need not worry about the placement of the image, because in HTML, elements are placed on the page and spaced automatically in the order that they are written.<br>
+        The ' src="" ' parameter may either specify the path to the image on the hard disk, or it may specify the url of the image.<br>
+        Keep in mind that the entire path to the image does not need to be specified, as long as the image is in the same directory as the HTML file,<br>
+        or in a sub-directory of the HTML file's parent-directory.<br>
+        Although the width and height options are not necessary for the tag, it is generally a good idea to specify them in order to avoid issues with<br>
+        page formatting and over-sized images.<br><br>
+        Here is an example of an image element, where the HTML file is located at ' /cmpt104/website.html ' and the desired image is located at ' /cmpt104/images/cats.png ':
+    </p>
+
+    <p class="code">
+        &ltbody&gt<br>
+        &ltimg src="images/cats.jpg" width="310" height="145"&gt<br>
+        &lt/body&gt
+    </p>
+
+    <p class="paragraph_8">
+        *Notice that the entire path to the image was not specified! Only the relevant path after the HTML file's parent-directory is needed!<br>
+        If this element was done correctly it should have resulted in an image that is 310 px wide and 145 px high as seen below.
+    </p>
+
+    <img src="images/cats.jpg" width="310" height="145">
+
+    <h2>Horizantal rulers</h2>
+
+    <p>
+        You may add a horizantal ruler to your site with the ' &lthr&gt ' tag.  This element is usefull for breaking up segments on your page. The ' &lthr&gt ' tag does not need to be closed.<br>
+        Below is some sample HTML code for creating a horizantal ruler:
+    </p>
+
+    <p class="code">
+        &ltp&gtVerry important text&ltp&gt<br>
+        &lthr&gt<br>
+        &ltp&gtEven more important text&ltp&gt
+    </p>
+
+    <p>
+        If done properly your element should look like this:
+    </p>
+
+    <div class="example">
+        <p>Verry important text</p>
+        <hr>
+        <p>Even more important text</p>
+    </div>
+
+    <h2>Changing font color</h2>
+
+    <p>
+        You can also change the text color quickly with the ' style="color:red" ' option within the ' &ltp&gt ' tag<br>
+        This is not the most efficient or correct method of changing font color, as typically font color is handled by a separate css file; But for our purposes it will work.<br>
+        You may either use basic colors such as 'yellow' or rgb colors by typing ' rgb(x,x,x) '<br>
+        Below is some sample HTML code showing how to change font color.
+    </p>
+
+    <p class="code">
+        &ltp style="color:yellow"&gtColored Text!&ltp&gt
+    </p>
+
+    <p>
+        If done properly your element should look like this:
+    </p>
+
+    <p class="example_w_color" style="color:yellow">Colored Text!</p>
+
+    <h2>Putting it all togather and viewing your website!</h2>
+
+    <p class="paragraph_9">
+        Now that we have our elements, we can now go about viewing them in a browser.  Navigate to the folder in which you have saved your HTML file, right click on it,<br>
+        and select ' open with... ' then chose your web browser.  The website should open, and you should see your elements! If some elements are missing, check your code for errors and ensure everything is spelled correctly and in the proper case.<br>
+        HTML errors are not shown by your browser, so the browser will quietly ommit the element.
+    </p>
+
+</body>                                 <!--close body tag-->
+</html>                                 <!--close the main html tag-->

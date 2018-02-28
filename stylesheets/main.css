@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(156, 223, 252);
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid rgb(2, 98, 119);
+    width: 50%;
+    padding: 10px;
+    color: rgb(219, 17, 205);
+}
+
+.pic {
+    position: absolute;
+    top: 88px;
+    left: 500px;
+    border: 3px solid rgb(0,0,0);
+    padding: 2px;
+}
+
+.paragraph_1{
+    color: rgb(145, 150, 0);
+}
+
+
+.code{
+    color: rgb(147, 20, 20);
+    border-style: dotted;
+    border-width: 3px;
+    boarder-color: rgb(147, 20, 20);
+    padding: 8px;
+    width: 50%;
+}
+
+.example{
+    color: rgb(13, 122, 29);
+    border-style: inset;
+    border-width: 3px;
+    boarder-color: rgb(13, 122, 29);
+    padding: 8px;
+    width: 50%;
+}
+
+.example_w_color{
+    border-style: inset;
+    border-width: 3px;
+    boarder-color: rgb(13, 122, 29);
+    padding: 8px;
+    width: 50%;
+}
+
